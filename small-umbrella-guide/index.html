@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compact Umbrella Stand Assembly Guide</title>
+  <style>
+    :root {
+      --blue: #082a63;
+      --orange: #ff6d00;
+      --ink: #151a24;
+      --muted: #536071;
+      --line: #d6dde7;
+      --panel: #f7f9fc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #dde3ea;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .page {
+      width: 1100px;
+      min-height: 2650px;
+      margin: 0 auto;
+      padding: 40px 46px 38px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 84% 7%, rgba(8,42,99,.08), transparent 27%),
+        linear-gradient(180deg, #fff 0%, #fbfcfe 100%);
+      border: 1px solid #e0e4ea;
+    }
+    .top {
+      display: grid;
+      grid-template-columns: 500px 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+    h1 {
+      margin: 0;
+      color: var(--blue);
+      font-size: 56px;
+      line-height: .95;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .accent {
+      width: 96px;
+      height: 5px;
+      margin: 20px 0 12px;
+      background: var(--orange);
+    }
+    .subtitle {
+      margin: 0 0 24px;
+      color: #111827;
+      font-size: 28px;
+    }
+    .video-card {
+      position: relative;
+      min-height: 344px;
+      padding: 74px 24px 24px;
+      border: 1px solid #dbe1ea;
+      border-radius: 14px;
+      background: rgba(248,250,252,.95);
+      box-shadow: 0 8px 18px rgba(8,42,99,.05);
+    }
+    .label {
+      position: absolute;
+      top: 0;
+      left: 26px;
+      padding: 10px 22px;
+      border-radius: 0 0 7px 7px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .scan-content {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 26px;
+      align-items: center;
+    }
+    .qr-placeholder {
+      width: 190px;
+      height: 190px;
+      display: block;
+      border-radius: 3px;
+    }
+    .scan-copy h2 {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: 34px;
+      line-height: .98;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .scan-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.3;
+    }
+    .hero {
+      position: relative;
+      height: 610px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .hero-tag {
+      position: absolute;
+      right: 0;
+      bottom: 20px;
+      padding: 11px 16px;
+      border-left: 5px solid var(--orange);
+      border-radius: 4px;
+      background: rgba(255,255,255,.94);
+      color: var(--blue);
+      box-shadow: 0 5px 18px rgba(8,42,99,.12);
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 30px 0 20px;
+      color: var(--blue);
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .section-title::before,
+    .section-title::after {
+      content: "";
+      height: 2px;
+      flex: 1;
+      background: var(--blue);
+      opacity: .68;
+    }
+    .parts-card {
+      height: 300px;
+      padding: 14px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+    }
+    .parts-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .parts-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .step {
+      height: 310px;
+      display: grid;
+      grid-template-rows: 76px 1fr;
+      padding: 12px 11px 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+    }
+    .step-head {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 9px;
+      align-items: start;
+    }
+    .num {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--orange);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 900;
+    }
+    .step p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.25;
+    }
+    .visual {
+      min-height: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .complete {
+      grid-column: 1 / -1;
+      height: 260px;
+      grid-template-columns: 290px 1fr;
+      grid-template-rows: 1fr;
+      gap: 24px;
+      padding: 18px 24px;
+    }
+    .complete .step-head {
+      align-self: center;
+    }
+    .complete .visual {
+      height: 224px;
+    }
+    .ready {
+      display: grid;
+      grid-template-columns: 43% 1fr;
+      gap: 34px;
+      min-height: 390px;
+      margin-top: 26px;
+      padding: 26px 30px;
+      border-radius: 16px;
+      background: var(--blue);
+      color: #fff;
+    }
+    .ready-image {
+      min-height: 330px;
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .ready-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .ready-copy {
+      align-self: center;
+    }
+    .ready-copy .eyebrow {
+      margin: 0 0 8px;
+      color: #ffb27b;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .ready-copy h2 {
+      margin: 0 0 18px;
+      font-size: 34px;
+      line-height: 1.05;
+    }
+    .ready-copy ul {
+      margin: 0;
+      padding-left: 21px;
+      color: #e8eef8;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .ready-copy li + li { margin-top: 8px; }
+    @media (max-width: 1100px) {
+      body { background: #fff; }
+      .page { width: 100%; min-height: 0; }
+    }
+    @media (max-width: 760px) {
+      .page { padding: 26px 20px; }
+      .top, .ready { grid-template-columns: 1fr; }
+      h1 { font-size: 42px; }
+      .hero { height: 480px; }
+      .scan-content { grid-template-columns: 150px 1fr; }
+      .qr-placeholder { width: 150px; height: 150px; }
+      .scan-copy h2 { font-size: 27px; }
+      .steps { grid-template-columns: 1fr; }
+      .step { height: 360px; }
+      .complete { grid-column: auto; height: 360px; grid-template-columns: 1fr; grid-template-rows: 76px 1fr; }
+      .ready { padding: 22px; }
+    }
+    @media print {
+      @page { size: 1100px 2650px; margin: 0; }
+      body { background: #fff; }
+      .page { border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="top">
+      <div>
+        <h1>Compact<br>Umbrella Stand<br>Assembly Guide</h1>
+        <div class="accent"></div>
+        <p class="subtitle">Setup, Use &amp; Care</p>
+
+        <div class="video-card">
+          <div class="label">Installation Video</div>
+          <div class="scan-content">
+            <img class="qr-placeholder" src="./assets/qr-placeholder.svg" alt="QR code placeholder">
+            <div class="scan-copy">
+              <h2>Scan to watch assembly video</h2>
+              <p>Scan the QR code to watch the assembly video.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="./assets/主图.jpg" alt="Assembled compact umbrella stand holding umbrellas and a walking cane">
+        <div class="hero-tag">Compact footprint · Removable drip tray</div>
+      </div>
+    </section>
+
+    <div class="section-title">Parts &amp; Hardware</div>
+    <section class="parts-card">
+      <img src="./assets/1.png" alt="Umbrella stand parts and hardware overview">
+    </section>
+    <p class="parts-note">Check that all 6 parts, 8 long screws, 7 short screws, 4 hex nuts and the tools are included before assembly.</p>
+
+    <div class="section-title">7 Easy Assembly Steps</div>
+    <section class="steps">
+      <article class="step">
+        <div class="step-head"><div class="num">1</div><p>Align the lower upright frame with the base frame. Start the screws loosely so the holes remain easy to align.</p></div>
+        <div class="visual"><img src="./assets/2.png" alt="Aligning the lower upright and base frame"></div>
+      </article>
+
+      <article class="step">
+        <div class="step-head"><div class="num">2</div><p>Fit the slotted middle shelf onto the lower section of the upright frame, with the raised lip facing forward.</p></div>
+        <div class="visual"><img src="./assets/3.png" alt="Installing the slotted middle shelf"></div>
+      </article>
+
+      <article class="step">
+        <div class="step-head"><div class="num">3</div><p>Position the solid back panel above the shelf and align its side holes with the upright frame.</p></div>
+        <div class="visual"><img src="./assets/4.png" alt="Installing the solid back panel"></div>
+      </article>
+
+      <article class="step">
+        <div class="step-head"><div class="num">4</div><p>Place the upper guide frame over the back panel. Secure the corner holes with the long screws and hex nuts.</p></div>
+        <div class="visual"><img src="./assets/5.png" alt="Fastening the upper umbrella guide frame"></div>
+      </article>
+
+      <article class="step">
+        <div class="step-head"><div class="num">5</div><p>Secure both sides of the middle shelf and the center panel connections with the short screws.</p></div>
+        <div class="visual"><img src="./assets/6.png" alt="Securing the middle shelf and panel connections"></div>
+      </article>
+
+      <article class="step">
+        <div class="step-head"><div class="num">6</div><p>Tighten the screws at both sides and the rear of the bottom frame. Check that the stand sits square and stable.</p></div>
+        <div class="visual"><img src="./assets/7.png" alt="Tightening the bottom frame connections"></div>
+      </article>
+
+      <article class="step complete">
+        <div class="step-head"><div class="num">7</div><p>Place the removable white drip tray inside the bottom frame. Assembly is complete—check every screw once more before use.</p></div>
+        <div class="visual"><img src="./assets/8.png" alt="Placing the removable drip tray in the base"></div>
+      </article>
+    </section>
+
+    <section class="ready">
+      <div class="ready-image"><img src="./assets/主图.jpg" alt="Compact umbrella stand ready for use"></div>
+      <div class="ready-copy">
+        <p class="eyebrow">Ready to use</p>
+        <h2>Store long umbrellas, folding umbrellas and walking canes.</h2>
+        <ul>
+          <li>Place the stand on a flat, level floor before loading.</li>
+          <li>Empty and wipe the removable drip tray after wet-weather use.</li>
+          <li>Recheck the screws periodically and tighten if needed.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

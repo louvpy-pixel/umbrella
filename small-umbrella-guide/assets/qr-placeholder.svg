@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#dbeaff"/>
+      <rect width="50" height="50" fill="#c6dcfa"/>
+      <rect x="50" y="50" width="50" height="50" fill="#c6dcfa"/>
+    </pattern>
+  </defs>
+  <rect x="6" y="6" width="588" height="588" rx="8" fill="url(#grid)" stroke="#1685e6" stroke-width="12"/>
+  <circle cx="236" cy="268" r="34" fill="#1685e6" stroke="#fff" stroke-width="6"/>
+  <text x="236" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#fff">1</text>
+  <text x="314" y="290" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#082a63">QR</text>
+  <text x="300" y="362" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#082a63">CODE</text>
+</svg>
